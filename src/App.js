@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from "./components/Button";
+import MovieCard from "./components/MovieCard";
+import styled from "styled-components";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>I am a header one tag</h1>
+        <h2>I am a header two tag</h2>
+        <button type={"submit"}>button</button>
+        <Button text={"Using Props"}/>
+
+      {/*{*/}
+      {/*  movies.map((movie) => {*/}
+      {/*    <MovieCard title={movie.title} year={movie.year}/>*/}
+      {/*  })*/}
+      {/*}*/}
     </div>
   );
 }
